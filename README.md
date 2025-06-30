@@ -14,6 +14,10 @@ I have started with Fundementals and delved into ML, DL and CV as some of my wor
 
 
 
+https://github.com/user-attachments/assets/36d354af-1250-44a5-9981-9921b3c7aeaf
+
+
+
 ### Predicting Random Traffic signals from the Internet
 
 ![Screenshot (1526)](https://github.com/user-attachments/assets/738e931c-fbe6-41b6-b3bf-9a259888ec7c)
