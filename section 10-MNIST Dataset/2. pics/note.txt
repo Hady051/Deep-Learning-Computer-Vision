@@ -1,0 +1,39 @@
+first model -> 1st layer as in the course is 10 units
+second model -> 1st layer is 784 units and gave better accuracy
+
+first model summary
+'''
+┌─────────────────────────────────┬───────────────────────────┬────────────┐
+│ Layer (type)                    │ Output Shape              │    Param # │
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense (Dense)                   │ (None, 10)                │      7,850 │  # // (784 x 10) + 10 (bias values)
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense_1 (Dense)                 │ (None, 10)                │        110 │
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense_2 (Dense)                 │ (None, 10)                │        110 │
+└─────────────────────────────────┴───────────────────────────┴────────────┘
+ Total params: 8,070 (31.52 KB)         
+ Trainable params: 8,070 (31.52 KB)
+ Non-trainable params: 0 (0.00 B)
+'''
+Epoch 20/20
+accuracy and val_accuracy were less and losses were higher than model 2, but judging by the plot,
+it has lower overfitting than second model.
+
+second model summary
+'''
+┌─────────────────────────────────┬───────────────────────────┬────────────┐
+│ Layer (type)                    │ Output Shape              │    Param # │
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense (Dense)                   │ (None, 784)               │    615,440 │
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense_1 (Dense)                 │ (None, 10)                │      7,850 │
+├─────────────────────────────────┼───────────────────────────┼────────────┤
+│ dense_2 (Dense)                 │ (None, 10)                │        110 │
+└─────────────────────────────────┴───────────────────────────┴────────────┘
+ Total params: 623,400 (2.38 MB)
+ Trainable params: 623,400 (2.38 MB)
+ Non-trainable params: 0 (0.00 B)
+'''
+Epoch 20/20
+accuracy: 0.9940 - loss: 0.0229 - val_accuracy: 0.9755 - val_loss: 0.1545

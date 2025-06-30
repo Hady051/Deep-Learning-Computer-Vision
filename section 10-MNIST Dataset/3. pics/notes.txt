@@ -1,0 +1,1 @@
+pic 2 is like that because of the problem of the default colormap of matplotlib.
